@@ -90,7 +90,7 @@ class PhotoIndex(context: Context) : SQLiteOpenHelper(context, "photo-index.db",
                 val visualScore = if (vector != null && p.vector != null && p.model == model) cosine(vector, p.vector) else 0.0
                 if (vector != null && (p.vector == null || p.model != model) && matches == 0.0 && !exact) continue
                 if (query.visual.isNotBlank() && vector == null && matches == 0.0) continue
-                val score = if (query.visual.isBlank()) 1.0 else (visualScore + 0.18 * matches).coerceAtMost(1.0)
+                val score = if (query.visual.isBlank() && vector == null) 1.0 else (visualScore + 0.18 * matches).coerceAtMost(1.0)
                 if (queue.size >= limit && score <= queue.peek()!!.score) continue
                 queue.add(SearchHit(p.uri, p.name, score, exact || matches > 0))
                 if (queue.size > limit) queue.poll()

@@ -51,7 +51,7 @@ python scripts/models/prepare_models.py
 ./gradlew :pixel:testDebugUnitTest :pixel:lintDebug :pixel:assembleDebug
 ```
 
-Use Python 3.12, JDK 17, Android SDK 36, build tools 36.0.0 and platform-tools. The first build needs internet access on the **development computer**. The Android app never does. Model files are deliberately excluded from Git; the script creates and validates them. For details and model-free UI/test builds, see the installation guide.
+Use Python 3.12, JDK 21, Android SDK 36, build tools 36.0.0 and platform-tools. The first build needs internet access on the **development computer**. The Android app never does. Model files are deliberately excluded from Git; the script creates and validates them. For details and model-free UI/test builds, see the installation guide.
 
 ## Design and limitations
 

@@ -57,4 +57,11 @@ class PhotoIndexTest {
         val hits = db.search(SearchQuery("", null, null, null, null), null, "model-v1", visible = setOf(photo().uri))
         assertEquals(listOf(photo().uri), hits.map { it.uri })
     }
+    @Test fun imageQueryUsesVectorScoresWithoutOcrBoost() {
+        db.upsert(photo()); db.upsert(photo("opposite").copy(vector = FloatArray(512) { if (it == 0) -1f else 0f }))
+        val hits = db.search(SearchQuery("", null, null, null, null), photo().vector, "model-v1")
+        assertEquals(photo().uri, hits.first().uri)
+        assertEquals(1.0, hits.first().score, 0.00001)
+        assertEquals(-1.0, hits.last().score, 0.00001)
+    }
 }

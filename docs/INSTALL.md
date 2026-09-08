@@ -14,7 +14,7 @@ This APK is a debug-signed research build, not a Play Store release. Android's d
 
 1. **Get from Version Control**, URL `https://github.com/pointandyshoot/Pixel10-PicQuery.git`. For an existing checkout use **Git → Pull**.
 2. In SDK Manager install **Android SDK Platform 36**, **Android SDK Build-Tools 36.0.0**, and **Android SDK Platform-Tools**.
-3. Use JDK 17 or a compatible newer bundled Gradle JDK. The wrapper pins Gradle 9.4.1; AGP is 9.2.0.
+3. Use JDK 21 or a compatible newer bundled Gradle JDK. The wrapper pins Gradle 9.4.1; AGP is 9.2.0.
 4. In a terminal at the repository root, run the model preparation commands from the README. Model export uses several gigabytes of temporary space and downloads model weights; allow at least 12 GB free space and preferably 16 GB RAM.
 5. Gradle Sync. Select the **pixel** run configuration/module.
 6. On the phone, enable Developer options → USB debugging. Connect USB, approve your computer, select the Pixel 10 in Android Studio and click Run.

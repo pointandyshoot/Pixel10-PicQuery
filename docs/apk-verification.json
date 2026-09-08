@@ -1,0 +1,40 @@
+{
+  "apk_sha256": "d7aa0f59289e5f0d916717cacf567402471365d39959a3dc3cf5784924fba9b8",
+  "size_bytes": 171670196,
+  "signature": "Verifies\nVerified using v1 scheme (JAR signing): false\nVerified using v2 scheme (APK Signature Scheme v2): true\nVerified using v3 scheme (APK Signature Scheme v3): false\nVerified using v3.1 scheme (APK Signature Scheme v3.1): false\nVerified using v4 scheme (APK Signature Scheme v4): false\nVerified for SourceStamp: false\nNumber of signers: 1\n",
+  "permissions": "package: au.pointandyshoot.picquery\nuses-permission: name='android.permission.READ_MEDIA_IMAGES'\nuses-permission: name='android.permission.READ_MEDIA_VISUAL_USER_SELECTED'\nuses-permission: name='android.permission.ACCESS_MEDIA_LOCATION'\nuses-permission: name='android.permission.FOREGROUND_SERVICE'\nuses-permission: name='android.permission.FOREGROUND_SERVICE_DATA_SYNC'\nuses-permission: name='android.permission.WAKE_LOCK'\nuses-permission: name='android.permission.RECEIVE_BOOT_COMPLETED'\npermission: au.pointandyshoot.picquery.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION\nuses-permission: name='au.pointandyshoot.picquery.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION'\n",
+  "native_alignment": {
+    "lib/arm64-v8a/libLiteRt.so": [
+      16384,
+      16384,
+      16384
+    ],
+    "lib/arm64-v8a/libLiteRtClGlAccelerator.so": [
+      16384,
+      16384,
+      16384
+    ],
+    "lib/arm64-v8a/libandroidx.graphics.path.so": [
+      16384,
+      16384,
+      16384
+    ],
+    "lib/arm64-v8a/liblitert_jni.so": [
+      16384,
+      16384,
+      16384
+    ],
+    "lib/arm64-v8a/libmlkit_google_ocr_pipeline.so": [
+      16384,
+      16384,
+      16384
+    ]
+  },
+  "model_sha256": {
+    "image_model.tflite": "e11ed02eddf57a45c178e9217c48a90d13231c6105356531faf9fc1ce4452713",
+    "text_model.tflite": "023f5c210828f59d1d4b82e6e3d641afd1c1fd314835fde2a0ad1724ccad893c"
+  },
+  "min_sdk": 36,
+  "target_sdk": 36,
+  "zipalign_16k": true
+}

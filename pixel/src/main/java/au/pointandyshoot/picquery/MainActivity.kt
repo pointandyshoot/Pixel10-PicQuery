@@ -106,7 +106,7 @@ private fun PhotoSearch(g: AppGraph) {
                         if (uri != null) {
                             check(g.engine.hasModels) { "This build needs visual model assets; see Settings." }
                             val bitmap = PhotoLibrary(context).decode(uri, 512)
-                            try { g.index.search(SearchQuery("image", null, null, null, null), g.engine.image(bitmap), g.engine.modelId, visible = visible) }
+                            try { g.index.search(SearchQuery("", null, null, null, null), g.engine.image(bitmap), g.engine.modelId, visible = visible) }
                             finally { bitmap.recycle() }
                         } else {
                             require(query.isNotBlank()) { "Enter a description or filter." }
