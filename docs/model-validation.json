@@ -1,0 +1,20 @@
+{
+  "model": "MobileCLIP2-S0",
+  "pretrained": "dfndr2b",
+  "purpose": "research proof of concept",
+  "scope": "Numerical export/quantisation validation; not a retrieval-quality or Pixel performance benchmark.",
+  "cases": {
+    "image": {
+      "minimum_cosine_vs_pytorch": 1.0,
+      "max_abs_error": 3.5762786865234375e-07,
+      "sha256": "e11ed02eddf57a45c178e9217c48a90d13231c6105356531faf9fc1ce4452713",
+      "bytes": 45608600
+    },
+    "text": {
+      "minimum_cosine_vs_pytorch": 0.9990590810775757,
+      "max_abs_error": 0.008075118064880371,
+      "sha256": "023f5c210828f59d1d4b82e6e3d641afd1c1fd314835fde2a0ad1724ccad893c",
+      "bytes": 65252736
+    }
+  }
+}

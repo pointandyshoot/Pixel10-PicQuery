@@ -1,0 +1,1 @@
+{"model":"MobileCLIP2-S0","pretrained":"dfndr2b","image":{"file":"image_model.tflite","shape":[1,3,256,256],"dtype":"float32","layout":"NCHW","normalisation":"RGB / 255, centre crop"},"text":{"file":"text_model.tflite","shape":[1,77],"dtype":"int32","quantisation":"dynamic int8 weights"},"output":{"shape":[1,512],"dtype":"float32","normalised":true}}

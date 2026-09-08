@@ -1,0 +1,7 @@
+# Install CPU torch/torchvision separately, then this file (Python 3.12).
+litert-torch==0.9.4
+ai-edge-litert==2.2.0
+open-clip-torch==3.3.0
+httpx[socks]==0.28.1
+mobileclip @ git+https://github.com/apple/ml-mobileclip.git@aecfb5453d022e9deff12f81a150ea8f35194baa
+timm @ git+https://github.com/huggingface/pytorch-image-models.git@a23518b6625b98a2b711e82061f2f2224f057668

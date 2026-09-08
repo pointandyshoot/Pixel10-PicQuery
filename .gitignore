@@ -1,0 +1,41 @@
+# General
+*.iml
+.gradle
+.idea
+/local.properties
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+output-metadata.json
+local.properties
+*.apk
+/app/release/
+
+# Models
+*.ptl
+*.pt
+*.onnx
+*.ort
+*.tflite
+
+# Python
+venv
+
+# Signature config
+key.properties
+*.jks
+
+# NPM
+website/docs/.vitepress/cache/
+website/docs/.vitepress/dist/
+website/docs/.vitepress/dist-ssr/
+node_modules/
+/.vscode/
+
+# Build products and local model environment
+**/build/
+.venv*/
+__pycache__/
+*.keystore
