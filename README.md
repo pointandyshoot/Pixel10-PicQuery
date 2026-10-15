@@ -1,3 +1,5 @@
+> **Latest delivered update: 0.3.1.** The map recovery build, source changes, tests and build instructions are in [map-update](map-update/README.md). Install over v2 0.2/0.3 without uninstalling. The `pixel` Gradle module below remains the original 0.1 baseline; read the recovery notes before building an update.
+
 # Pixel10-PicQuery — research proof of concept
 
 Offline photo search for **Pixel 10 / Tensor G5**, Android 16 and later. Adapted from [greyovo/PicQuery](https://github.com/greyovo/PicQuery/tree/4d728e927f617efaf1b94cf0c96325ce5791fdc4); the production module in this project is `pixel`.

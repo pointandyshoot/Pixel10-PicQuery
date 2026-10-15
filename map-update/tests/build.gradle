@@ -1,0 +1,28 @@
+plugins { id 'base' }
+repositories { google(); mavenCentral() }
+configurations {
+ verification {
+  attributes {
+   attribute(Usage.USAGE_ATTRIBUTE, objects.named(Usage, Usage.JAVA_RUNTIME))
+   attribute(org.gradle.api.attributes.java.TargetJvmEnvironment.TARGET_JVM_ENVIRONMENT_ATTRIBUTE, objects.named(org.gradle.api.attributes.java.TargetJvmEnvironment, 'standard-jvm'))
+  }
+ }
+}
+dependencies {
+ verification 'junit:junit:4.13.2'
+ verification 'org.robolectric:robolectric:4.14.1'
+ verification 'org.robolectric:android-all:14-robolectric-10818077'
+}
+tasks.register('resolveVerification') {
+ doLast {
+  def files = configurations.verification.files.collect { f ->
+   if(f.name.endsWith('.aar')) {
+    def out = new File(buildDir, 'aar/'+f.name)
+    copy { from zipTree(f); include 'classes.jar'; into out }
+    return new File(out,'classes.jar')
+   }
+   return f
+  }
+  file('classpath.txt').text = files.join(File.pathSeparator)
+ }
+}

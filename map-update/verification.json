@@ -1,0 +1,28 @@
+{
+  "version": "0.3.1",
+  "version_code": 4,
+  "package": "au.pointandyshoot.picquery.v2",
+  "apk_sha256": "6fccdd0c4dbe5ef0f2c28af76390968c882a63cb3ecfee4732d69a2b31bdda3e",
+  "size_bytes": 172710265,
+  "unchanged_original_entries": 613,
+  "unchanged_other_dex_files": 5,
+  "signature_matches_installed_v2": true,
+  "zipalign_16k": true,
+  "native_elf_16k": true,
+  "models_and_assets_identical": true,
+  "ui_tests": 11,
+  "physical_device_tested": false,
+  "app_class_integrity": {
+    "base_apk_sha256": "f5acbf5ffdf25ca9f079eccd3b78168e4ce4610592b9d8b4f918f8a553c02c05",
+    "original_app_classes": 227,
+    "modified_or_replaced_classes": [
+      "PhotoMapKt.smali",
+      "PhotoClusters.smali",
+      "PhotoMapKt$$ExternalSyntheticLambda2.smali",
+      "PhotoMapKt$$ExternalSyntheticLambda3.smali",
+      "BuildConfig.smali",
+      "ComposableSingletons$MainActivityKt.smali"
+    ],
+    "unchanged_app_classes": 221
+  }
+}
